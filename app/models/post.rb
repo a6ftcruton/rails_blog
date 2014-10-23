@@ -4,4 +4,8 @@ class Post < ActiveRecord::Base
 
   validates :title, presence: true
   validates :body, presence: true
+
+  def most_recent
+    Post.all.sort_by { |post| post.created_at }.reverse
+  end
 end

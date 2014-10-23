@@ -1,0 +1,48 @@
+.landing {
+  position: relative;
+  //background: url('circuitboard.jpg') no-repeat center center fixed;
+
+  background: url('http://unplugged.ee/wp-content/uploads/2013/03/frank2.jpg') no-repeat center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  min-height: 360px;
+  margin:0;
+  padding:0;
+  color: $light;
+}
+.landing-nav {
+  display: block;
+  text-align:center;
+  padding: .3rem 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 3vh;
+  background-color: $secondary;
+}
+.landing-link {
+  display: inline-block;
+  font: 2rem $header-font;
+  margin: auto 2rem;
+}
+.landing-link a {
+  color: $light;
+  text-decoration: none;
+}
+.landing-link a:hover {
+  color: $primary;
+}
+.title-main {
+  font-family: $header-font;
+  font-size: 5rem;
+  letter-spacing: .6rem;
+  padding-top: 40vh;
+  text-align:center;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+  margin: 0;
+}
+
