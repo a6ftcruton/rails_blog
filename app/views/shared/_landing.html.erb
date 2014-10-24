@@ -1,8 +1,12 @@
 <div class="landing">
   <h1 class="title-main">RAILS BLOG</h1>
   <ul class="landing-nav">
-    <li class="landing-link"><%= link_to "Most Recent", root_path %></li>
-    <li class="landing-link"><%= link_to "Popular", root_path %></li>
-    <li class="landing-link"><%= link_to "By Category", root_path %></li>
+    <li class="landing-link"><%= link_to "Most Recent", posts_path, remote: true, id: 'most-recent' %></li>
+    <li class="landing-link"><%= link_to "Popular", posts_path, remote: true %></li>
+    <li class="landing-link"><%= link_to "By Category", posts_path, remote: true %></li>
   </ul>
+  <div class="gears">
+    <%= image_tag 'gear1.svg', class: "gear gear1" %>
+    <%= image_tag 'gear2.svg', class: "gear gear2" %>
+  </div>
 </div>

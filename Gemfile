@@ -12,6 +12,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'better_errors'
 gem 'binding_of_caller'
 gem 'unicorn'
+gem 'cancan', '~> 1.6.10'
+gem 'bcrypt', '~> 3.1.9'
 
 group :test do
   gem 'rspec-rails', '~> 3.1.0'

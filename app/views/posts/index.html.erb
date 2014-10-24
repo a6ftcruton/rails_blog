@@ -1,14 +1,10 @@
-<h1>Welcome</h1>
-<ul>
-  <%= link_to "Most Recent", root_path %>
-  <%= link_to "Filter by Category", root_path %>
-  <%= link_to "Popular", root_path %>
-</ul>
-<% @posts.each do |post| %>
-  <div>
-    <h2><%= post.title %></h2>
-    <div><%= post.body %></div>
-    <%= "Category:#{post.category_ids}" %><br>
-    <%= "Created At:#{post.created_at}" %>
-  </div>
-<% end %>
+<section class="posts-wrapper">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <%= link_to post.title, post_path(post), class: 'post-title' %>
+      <div><%= post.body %></div>
+      <%= "Category:#{post.category_ids}" %><br>
+      <%= "Created At:#{post.created_at}" %>
+    </div>
+  <% end %>
+</section>
